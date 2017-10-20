@@ -7,9 +7,11 @@
  *
  * Copyright 2013-2014 hustlzp
  * Released under the MIT license
+ *
+ * Modified by hstolz
  */
 
-(function($) {
+(function(jQuery) {
 
     // 共收录2553条简繁对照
     // 尚未考证是否正确、重复、完整
@@ -149,7 +151,7 @@
     }
 
     // 扩展jQuery全局方法
-    $.extend({
+    jQuery.extend({
         /**
          * 文本简转繁
          * @param {String} str - 待转换的文本
@@ -170,7 +172,7 @@
     });
 
     // 扩展jQuery对象方法
-    $.fn.extend({
+    jQuery.fn.extend({
         /**
          * jQuery Objects简转繁
          * @this {jQuery Objects} 待转换的jQuery Objects
