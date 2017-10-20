@@ -1,4 +1,5 @@
-#jquery-s2t
+
+# jquery-s2t
 
 A jQuery plugin to convert between Simplified Chinese and Traditional Chinese.
 
@@ -15,6 +16,14 @@ You can just download `jquery.s2t.js`, or install via bower:
 
 ```sh
 bower install jquery-s2t
+```
+
+## Naver Bookmarklet
+
+To convert the traditional hanja on m.endic.naver.com, create a bookmarklet of the following:
+
+``` javascript
+javascript:(function(d,u,s){s=d.createElement('script');s.type='text/javascript';s.charset='utf-8';s.src=u;d.head.appendChild(s);s.onload=function(){jQuery('span.hanja').t2s()}})(document,'https://cdn.rawgit.com/hstolz/jquery-s2t/2eb948a9/jquery.s2t.js')
 ```
 
 ## Usage
@@ -41,7 +50,3 @@ var result = $.t2s('我是程序員！');
 $('.content-wap').s2t();
 $('.content-wap').t2s();
 ```
-
-## Websites using jquery-s2t
-
-None
